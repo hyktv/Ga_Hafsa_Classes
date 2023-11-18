@@ -5,28 +5,28 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Ga_Hafsa_Classes"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Canvas>
+        Title="MainWindow" Height="489" Width="840">
+    <Canvas Margin="0,0,0,-6">
         <ListBox x:Name="lbShopping" Height="346" Width="223" d:ItemsSource="{d:SampleData ItemCount=5}" Canvas.Left="339" Canvas.Top="39" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-        <ListBox x:Name="IbInventory" Height="178" Width="219" d:ItemsSource="{d:SampleData ItemCount=5}" Canvas.Left="16" Canvas.Top="39" HorizontalAlignment="Center" VerticalAlignment="Top" SelectionChanged="IbInventory_SelectionChanged"/>
+        <ListBox x:Name="IbInventory" Height="213" Width="219" d:ItemsSource="{d:SampleData ItemCount=5}" Canvas.Left="16" Canvas.Top="39" HorizontalAlignment="Center" VerticalAlignment="Top" SelectionChanged="IbInventory_SelectionChanged"/>
         <Label Content="Inventory" Canvas.Left="86" Canvas.Top="13"/>
         <Label Content="Shopping Cart" Canvas.Left="407" Canvas.Top="13"/>
         <Label Content="Receipt" Canvas.Left="657" Canvas.Top="13"/>
-        <RichTextBox Height="186" Width="219" Canvas.Left="16" Canvas.Top="238" HorizontalAlignment="Left" VerticalAlignment="Center">
+        <RichTextBox Height="186" Width="219" Canvas.Left="16" Canvas.Top="264" HorizontalAlignment="Center" VerticalAlignment="Top">
             <FlowDocument>
                 <Paragraph>
                     <Run Name="rtbItemDescription"/>
                 </Paragraph>
             </FlowDocument>
         </RichTextBox>
-        <RichTextBox Height="346" Width="218" Canvas.Left="572" Canvas.Top="39" HorizontalAlignment="Center" VerticalAlignment="Top">
+        <RichTextBox Height="346" Width="237" Canvas.Left="572" Canvas.Top="39" HorizontalAlignment="Left" VerticalAlignment="Center">
             <FlowDocument>
                 <Paragraph>
                     <Run Name="rtbReceipt"/>
                 </Paragraph>
             </FlowDocument>
         </RichTextBox>
-        <Button x:Name="btnTotalTransaction" Content="Total Transaction" Canvas.Left="360" Canvas.Top="390" HorizontalAlignment="Center" Height="34" VerticalAlignment="Top" Width="180" Click="btnTotalTransaction_Click"/>
+        <Button x:Name="btnTotalTransaction" Content="Total Transaction" Canvas.Left="360" Canvas.Top="402" HorizontalAlignment="Center" Height="34" VerticalAlignment="Top" Width="180" Click="btnTotalTransaction_Click"/>
         <Button x:Name="btnAddtoCart" Content="Add to Cart" Canvas.Left="240" Canvas.Top="214" HorizontalAlignment="Left" VerticalAlignment="Center" Width="94" Height="38" Click="btnAddtoCart_Click"/>
 
 
